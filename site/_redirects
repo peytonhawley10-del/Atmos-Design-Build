@@ -1,0 +1,15 @@
+# 301s from the old Framer site's URLs. Works on Netlify and Cloudflare Pages.
+/services/building-design             /design-build                   301
+/services/interior-design-planning    /interior-renovation            301
+/services/consulting-services         /services                       301
+/services/project-management          /services                       301
+/services/3d-rendering-visualization  /design-build                   301
+/services/feasibility-studies         /services                       301
+/services/site-landscape-design       /landscape-hardscape            301
+/portfolio/clairevue-copy             /portfolio/zig-zag              301
+/portfolio/blooming-nook              /portfolio                      301
+/design-lab                           /design-build                   301
+/design-lab/*                         /design-build                   301
+/blogs                                /                               301
+/reviews                              /about                          301
+/contact                              /contact-us                     301

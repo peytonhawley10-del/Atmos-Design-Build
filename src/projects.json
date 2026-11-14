@@ -1,0 +1,228 @@
+[
+ {
+  "slug": "laguna", "name": "Laguna", "category": "multifamily", "type": "Apartment community",
+  "client": "Infill Innovation Inc.", "year": "2026", "size": "1/2 acre", "units": "16 apartments",
+  "location": "San Diego, CA", "services": "Site design, landscape design, exterior lighting", "status": "Under construction",
+  "title": "Laguna: Multifamily Pool & Landscape, San Diego | Atmos",
+  "description": "Site and landscape design for a 16-unit San Diego apartment community: a resort-style pool, bocce court, turf lawn, lounge areas and private yards.",
+  "summary": "A resort-inspired core anchors this 16-unit community with a pool, bocce court, turf lawn and lounge seating, while private yards extend outdoor living to every resident.",
+  "cover": "laguna-pool-rendering", "cover_alt": "Design rendering of the Laguna community pool with palms, lounge seating and umbrellas", "badge": "Design rendering",
+  "body": [
+   {"h": "Overview", "p": ["Laguna is organized around a resort-inspired core that anchors the site with a pool, bocce ball court, turf lawn and lounge seating. Crape myrtles and palms reinforce the Southern California character, while private yards extend that sense of outdoor living to residents.", "The client, a progressive urban development firm, wanted a multi-unit community that pairs eco-conscious design with community-focused spaces while holding to a mid-range budget."]},
+   {"h": "Scope", "ul": ["Site plan, landscape plan and exterior lighting plan for the community", "A communal pool and relaxation space, plus private yards for residents", "Efficient circulation between units, community space, parking and trash areas", "Efficient lighting and low-water plants and trees"]},
+   {"h": "Key details", "ul": ["Half an acre of flat land, two-story buildings, 16 apartments", "Amenities: private community pool, bocce ball court, lounge areas"]}
+  ],
+  "credits": ["Site & landscape design: Atmos Design Build, LLC", "Building designer: Pro-Cal Design & Engineering", "General contractor: Infill Innovation Inc."],
+  "gallery": [
+   {"img": "laguna-before-existing-pool", "alt": "The existing empty pool and bare site before work began", "cap": "Before: the existing pool and yard"},
+   {"img": "laguna-pool-demolition", "alt": "Existing pool being demolished", "cap": "Demolition of the old pool"},
+   {"img": "laguna-new-pool-shell", "alt": "New pool shell and concrete deck poured between the buildings", "cap": "New pool shell and deck in place"},
+   {"img": "laguna-pool-deck-progress", "alt": "Concrete pool deck curing with palms staged for planting", "cap": "Pool deck poured, palms staged"},
+   {"img": "laguna-pool-night-rendering", "alt": "Evening rendering of the Laguna pool courtyard with landscape lighting", "cap": "Design rendering: the courtyard at dusk"},
+   {"img": "laguna-walkway-lighting-rendering", "alt": "Rendering of a lit walkway beside the residences at night", "cap": "Design rendering: path and fence lighting"}
+  ]
+ },
+ {
+  "slug": "crestview", "name": "Crestview", "category": "multifamily", "type": "Apartment community",
+  "client": "Infill Innovation Inc.", "year": "2025", "size": "1/4 acre", "units": "32 apartments",
+  "location": "San Diego, CA", "services": "Site design, landscape design, interior design", "status": "Under construction",
+  "title": "Crestview: 32-Unit Site & Landscape Design | Atmos",
+  "description": "Site, landscape and interior design for a 32-unit San Diego apartment community with private yards, a central courtyard and low-water native planting.",
+  "summary": "On an elevated corner lot with ocean views, Crestview balances privacy and community: private ground-floor yards step out toward the coast and a central courtyard gives residents a place to gather.",
+  "cover": "crestview-front-landscape", "cover_alt": "Crestview residences with new horizontal wood fencing, planting and concrete walks",
+  "body": [
+   {"h": "Overview", "p": ["Perched on an elevated corner lot with sweeping ocean views, Crestview offers thoughtfully designed residences that balance privacy with community living. Ground-floor residents step directly into private yards with views of the coast, while a central courtyard creates an inviting shared space for gathering and relaxation.", "The client asked for a community that integrates eco-conscious design, urban greenery and community-focused spaces on a mid-to-high budget."]},
+   {"h": "Scope", "ul": ["Site and landscape plan for the community", "Private yards, communal space and clear circulation to site amenities", "Low-water native plant and tree species throughout"]}
+  ],
+  "credits": ["Site & landscape design: Atmos Design Build, LLC", "General contractor: Vertical MVMT, LLC"],
+  "gallery": [
+   {"img": "crestview-before-construction", "alt": "Crestview site during construction with bare soil and stored materials", "cap": "During construction"},
+   {"img": "crestview-corner-planting", "alt": "Completed corner planting with wood fencing and concrete planter walls", "cap": "Corner planting and fencing complete"},
+   {"img": "crestview-street-fencing", "alt": "Horizontal wood fencing and new planting along the walkway", "cap": "Walkway, fencing and low-water planting"},
+   {"img": "crestview-private-yard-turf", "alt": "Private fenced yard with turf", "cap": "Private yards for ground-floor residents"},
+   {"img": "crestview-entry-lawn", "alt": "Front entry with lawn, wood fence and concrete path", "cap": "Entry landscape"},
+   {"img": "crestview-courtyard-rendering", "alt": "Rendering of the central courtyard with pergola and trees", "cap": "Design rendering: central courtyard"}
+  ]
+ },
+ {
+  "slug": "woodline", "name": "Woodline", "category": "multifamily", "type": "Infill residential community",
+  "client": "SDRE Homebuyers, LLC", "year": "2025", "size": "1/3 acre", "units": "12 residences",
+  "location": "San Diego, CA", "services": "Site design, landscape design", "status": "Complete",
+  "title": "Woodline: Hillside Multifamily Landscape | Atmos",
+  "description": "Site and landscape design for a 12-residence hillside community in San Diego: terraced retaining walls, horizontal wood fencing and private yards.",
+  "summary": "Material continuity drives this hillside community. Horizontal wood fencing, terraced retaining walls and private yards echo the buildings' wood entry paneling from the street to the canyon edge.",
+  "cover": "woodline-hillside-landscape", "cover_alt": "Woodline hillside residences with terraced wood fencing and new planting",
+  "body": [
+   {"h": "Overview", "p": ["The design is driven by material continuity. Horizontal wood fencing runs throughout the site in dialogue with the buildings' wood entry paneling. A continuous retaining wall capped with fencing creates a rhythmic, warm procession through the project, and terraced grade changes are handled with understated walls that keep the focus on the material palette.", "A private residential developer wanted to transform a sloped hillside property into an infill community that emphasizes privacy, thoughtful site integration and a strong connection between architecture and outdoor living."]},
+   {"h": "Scope", "ul": ["Site and landscape design for a multi-unit community with private outdoor spaces, responsive to the site's topography", "Terraced grading, retaining walls, fencing and layered landscape for seamless transitions across the property", "A landscape palette that complements the architecture, with warm wood detailing and clean modern forms"]},
+   {"h": "Outcome", "ul": ["A consistent use of wood, concrete and layered planting gives the whole development one identity", "Thoughtful grading and terraced transitions tie the buildings into the natural hillside", "Close coordination with contractors and fabricators kept fencing, walls and detailing precisely aligned"]}
+  ],
+  "credits": ["Site & landscape design: Atmos Design Build, LLC", "Building designer: Pro-Cal Design & Engineering", "General contractor: Vertical MVMT, LLC"],
+  "gallery": [
+   {"img": "woodline-before-construction", "alt": "Side yard during construction with block wall and framing exposed", "cap": "During construction"},
+   {"img": "woodline-retaining-wall-fence", "alt": "Concrete retaining wall capped with horizontal cedar fencing", "cap": "Retaining wall capped with fencing"},
+   {"img": "woodline-entry-turf-yard", "alt": "Residence entry with wood soffit and turf yard", "cap": "Entry paneling and private yard"},
+   {"img": "woodline-wood-entry-paneling", "alt": "Wood entry paneling matched to the fence line", "cap": "Fencing in dialogue with the entry paneling"}
+  ]
+ },
+ {
+  "slug": "terraza", "name": "Terraza", "category": "multifamily", "type": "Apartment community",
+  "client": "Infill Innovation Inc.", "year": "2026", "size": "1/3 acre", "units": "14 apartments",
+  "location": "San Diego, CA", "services": "Site design, landscape design", "status": "Complete",
+  "title": "Terraza: 14-Unit Terraced Landscape Design | Atmos",
+  "description": "Site and landscape design for a 14-unit San Diego apartment community: terraced yards, retaining walls, stair planters, wood fencing and planted paths.",
+  "summary": "A sloping site became a sequence of terraced private yards, planter-lined stairs and fenced entries for 14 apartments.",
+  "cover": "terraza-stair-planters", "cover_alt": "Terraza apartments with exterior stairs, wood planters and a young tree",
+  "body": [
+   {"h": "Overview", "p": ["Terraza steps down its site in a series of terraces. Block retaining walls capped with horizontal wood fencing create level, private yards for residents, while planters and low-water planting soften the stairs and paths that connect each level."]},
+   {"h": "Scope", "ul": ["Site and landscape design for 14 apartments on a third of an acre", "Terraced private yards with retaining walls and wood fencing", "Gated entries, stair planters and planted side paths"]}
+  ],
+  "credits": ["Site & landscape design: Atmos Design Build, LLC", "Building designer: Pro-Cal Design & Engineering", "General contractor: Infill Innovation Inc."],
+  "gallery": [
+   {"img": "terraza-before-site", "alt": "Rear of the Terraza buildings before landscape work with bare soil", "cap": "Before: bare site at the rear of the buildings"},
+   {"img": "terraza-terraced-yards", "alt": "Terraced yards with block walls, steps and wood fencing", "cap": "Terraced yards and steps"},
+   {"img": "terraza-private-lawn", "alt": "Private yard with turf and wood fencing", "cap": "Private fenced lawn"},
+   {"img": "terraza-gated-entries", "alt": "Gated unit entries with wood fencing and planting", "cap": "Gated entries"},
+   {"img": "terraza-retaining-wall", "alt": "Block retaining wall capped with wood fencing", "cap": "Retaining wall and fence"},
+   {"img": "terraza-side-path-planting", "alt": "Side path with planting along a wood fence", "cap": "Planted side path"}
+  ]
+ },
+ {
+  "slug": "alder", "name": "Alder", "category": "multifamily", "type": "Infill residential community",
+  "client": "SDRE Homebuyers, LLC", "year": "2025", "size": "1/5 acre", "units": "7 residences",
+  "location": "San Diego, CA", "services": "Site design, landscape design", "status": "Complete",
+  "title": "Alder: Infill Community Courtyard Design | Atmos",
+  "description": "Site and landscape design for a compact 7-residence infill community in San Diego, arranged around a pergola-covered shared courtyard with private yards.",
+  "summary": "A compact infill site arranged around a pergola-covered community space, with private yards framing the shared heart of the project.",
+  "cover": "alder-pergola-courtyard", "cover_alt": "Alder community courtyard with steel pergola, wood fencing and planting",
+  "body": [
+   {"h": "Overview", "p": ["Despite its smaller scale, Alder's landscape creates a strong sense of arrival and shared identity. Private yards frame a central pergola-covered community space, and an existing single-family residence was retained and woven into the overall site plan."]},
+   {"h": "Scope", "ul": ["Site and landscape design for seven residences on a fifth of an acre", "A central shared courtyard under a steel pergola", "Private yards, fencing and planted walkways", "Integration of the existing home into the new site plan"]}
+  ],
+  "credits": ["Site & landscape design: Atmos Design Build, LLC", "Building designer: Pro-Cal Design & Engineering", "General contractor: Infill Innovation Inc."],
+  "gallery": [
+   {"img": "alder-pergola-detail", "alt": "Steel pergola casting shade over the courtyard beside a wood fence", "cap": "Pergola over the shared courtyard"},
+   {"img": "alder-community-garden", "alt": "Planted courtyard between residences with wood fencing", "cap": "Courtyard planting"},
+   {"img": "alder-walkway-planting", "alt": "Walkway with new trees, mulch planting and lawn", "cap": "Walkway and lawn"},
+   {"img": "alder-existing-home-fencing", "alt": "Existing home retained on site with new wood fencing", "cap": "The retained existing home, re-fenced"}
+  ]
+ },
+ {
+  "slug": "bower", "name": "Bower", "category": "multifamily", "type": "Apartment community",
+  "client": "SDRE Homebuyers, LLC", "year": "2025", "size": "1/2 acre", "units": "36 apartments",
+  "location": "San Diego, CA", "services": "Site design, landscape design", "status": "Under construction",
+  "title": "Bower: 36-Unit Site & Landscape Design | Atmos",
+  "description": "Site and landscape design for a 36-unit apartment community in San Diego with a pergola courtyard, planted stair courts and a landscaped parking court.",
+  "summary": "Thirty-six apartments on half an acre, organized around a shaded courtyard, planted stair courts and a landscaped parking court.",
+  "cover": "bower-courtyard-rendering", "cover_alt": "Rendering of the Bower courtyard with pergola seating and trees", "badge": "Design rendering",
+  "body": [
+   {"h": "Overview", "p": ["Bower is the largest of the communities Atmos has designed for this developer. The site plan fits 36 apartments around a pergola-shaded courtyard, with planted stair courts between buildings and a parking court softened by low-water planting."]},
+   {"h": "Scope", "ul": ["Site and landscape design for 36 apartments on half an acre", "Shared courtyard with pergola and seating", "Planted stair courts and walkways between buildings", "Parking court landscape and screening"]}
+  ],
+  "credits": ["Site & landscape design: Atmos Design Build, LLC", "Building designer: Pro-Cal Design & Engineering", "General contractor: Infill Innovation Inc."],
+  "gallery": [
+   {"img": "bower-site-plan", "alt": "Rendered site plan of the Bower community showing buildings, trees and parking", "cap": "Site plan"},
+   {"img": "bower-stair-courtyard-rendering", "alt": "Rendering of a planted walkway between two stair towers", "cap": "Design rendering: stair court"},
+   {"img": "bower-parking-court-rendering", "alt": "Rendering of the parking court with planting and screening", "cap": "Design rendering: parking court"}
+  ]
+ },
+ {
+  "slug": "sea-breeze", "name": "Sea Breeze", "category": "interior", "type": "Bathroom renovation",
+  "client": "Confidential", "year": "2022", "size": "74 sq ft",
+  "location": "San Diego, CA", "services": "Interior design, material selection, full renovation", "status": "Complete",
+  "title": "Sea Breeze: Bathroom Renovation, San Diego | Atmos",
+  "description": "A full bathroom renovation in a historic San Diego home, designed and built by Atmos: new vanity, tile, water-efficient fixtures and a coastal palette.",
+  "summary": "Atmos designed and built the renovation of this L-shaped bathroom in a historic home, taking it to the studs and back with a material palette drawn from the nearby ocean.",
+  "cover": "sea-breeze-bathroom-after", "cover_pos": "50% 82%", "cover_alt": "Renovated bathroom with blue-green tile wainscot, new vanity and black fixtures",
+  "body": [
+   {"h": "Overview", "p": ["Atmos reimagined and executed the renovation of this L-shaped bathroom within a historic home, creating a fresh, modern aesthetic that remains connected to its coastal setting. The design brings subtle references to the water into the material palette while balancing contemporary function with the character of the original home."]},
+   {"h": "Scope", "ul": ["Complete renovation of the existing bathroom", "New vanity and finishes throughout", "Fixtures upgraded to water-efficient options", "A curated material palette inspired by the water", "A clean, refreshing look that keeps the warmth of the historic home"]},
+   {"h": "How it ran", "ul": ["Site visit to document layout, proportions and functional needs in the 72-square-foot room", "Plan and material board approved before any demolition", "Demolition to the studs, then new tile, vanity, fixtures and finishes installed", "Final walk-through and handover"]}
+  ],
+  "before": {"img": "sea-breeze-bathroom-before", "alt": "The bathroom stripped to the studs during demolition"},
+  "after": {"img": "sea-breeze-bathroom-after", "alt": "The finished bathroom with new tile, vanity and fixtures"},
+  "compare_h": "From the studs to finished",
+  "gallery": [
+   {"img": "sea-breeze-bathroom-material-board", "alt": "Floor plan and material board for the Sea Breeze bathroom", "cap": "Plan and material board"},
+   {"img": "sea-breeze-tile-in-progress", "alt": "Wall tile being installed", "cap": "Tile installation in progress"},
+   {"img": "sea-breeze-shower-after", "alt": "Finished shower with green tile and niche", "cap": "Finished shower with tiled niche"},
+   {"img": "sea-breeze-vanity-in-progress", "alt": "Vanity installed with tile wainscot before final finishes", "cap": "Vanity set, finishes underway"}
+  ]
+ },
+ {
+  "slug": "slate", "name": "Slate", "category": "interior", "type": "Bathroom renovation",
+  "client": "Confidential", "year": "2024", "size": "80 sq ft",
+  "location": "San Diego, CA", "services": "Bathroom design, material selection, remodel", "status": "Complete",
+  "title": "Slate: Bathroom Remodel, San Diego | Atmos",
+  "description": "An 80-square-foot bathroom remodel in San Diego, designed and built by Atmos with a new vanity, marble-look top, matte black fixtures and fresh finishes.",
+  "summary": "A dated 80-square-foot bathroom, redesigned and rebuilt with a dark vanity, marble-look top and matte black fixtures. Clean, timeless and functional.",
+  "cover": "slate-bathroom-after", "cover_alt": "Remodeled bathroom with dark vanity, white top, black-framed mirror and vanity light",
+  "body": [
+   {"h": "Overview", "p": ["Slate shows the approach we bring to unit and guestroom baths: agree the plan and the finish board first, then build exactly that. The palette is deliberately simple and durable, which is what makes it repeatable."]},
+   {"h": "Scope", "ul": ["Bathroom design with plan and material board", "New vanity, top, faucet and hardware", "New lighting, mirror and accessories", "Fresh wall finishes and flooring"]}
+  ],
+  "before": {"img": "slate-bathroom-before", "alt": "The original bathroom with dated vanity and lighting"},
+  "after": {"img": "slate-bathroom-after", "alt": "The remodeled bathroom with new vanity, mirror and lighting"},
+  "compare_h": "Dated to done",
+  "gallery": [
+   {"img": "slate-bathroom-material-board", "alt": "Slate bathroom floor plan and material board", "cap": "Plan and material board"},
+   {"img": "slate-vanity-after", "alt": "New vanity with marble-look top and black faucet", "cap": "Vanity and top"}
+  ]
+ },
+ {
+  "slug": "zig-zag", "name": "Zig Zag", "category": "outdoor", "type": "Deck replacement",
+  "client": "Confidential", "year": "2024", "size": "325 sq ft",
+  "location": "San Diego, CA", "services": "Deck design, renderings", "status": "Complete",
+  "title": "Zig Zag: Deck Replacement Design, San Diego | Atmos",
+  "description": "Design and renderings for the replacement of a deteriorated 325-square-foot deck in San Diego, with a custom zig-zag railing and a layout ready for a hot tub.",
+  "summary": "After years of deterioration, this deck was redesigned with a distinctive zig-zag railing and a layout adjusted to reach a future hot tub.",
+  "cover": "zig-zag-deck-after", "cover_alt": "Completed wood deck with zig-zag pattern railing overlooking trees",
+  "body": [
+   {"h": "Overview", "p": ["The owners wanted to replace a failing backyard deck with something safer, better laid out and unmistakably theirs. Atmos provided the plans and renderings to rebuild it, with a custom zig-zag railing and circulation planned around a future hot tub."]},
+   {"h": "Scope", "ul": ["Comprehensive deck plan with renderings", "Layout redesigned to connect the deck to a planned hot tub", "Custom railing pattern and stair detailing"]}
+  ],
+  "gallery": [
+   {"img": "zig-zag-deck-before", "alt": "The original deteriorated deck before replacement", "cap": "Before: the deteriorated deck"},
+   {"img": "zig-zag-deck-rendering", "alt": "Rendering of the new deck design with zig-zag railing", "cap": "Design rendering"},
+   {"img": "zig-zag-stairs-after", "alt": "Completed deck stairs and railing", "cap": "Completed stairs and railing"},
+   {"img": "zig-zag-railing-after", "alt": "Detail of the completed zig-zag railing", "cap": "Railing detail"}
+  ]
+ },
+ {
+  "slug": "takibi-supesu", "name": "Takibi Supesu", "category": "outdoor", "type": "Outdoor lounge & kitchen",
+  "year": "2025", "location": "Vista, CA", "services": "Landscape & outdoor living design (design-build)", "status": "Design complete",
+  "title": "Takibi Supesu: Outdoor Kitchen & Lounge Design | Atmos",
+  "description": "Design for a Japanese-inspired outdoor lounge in Vista, CA: a fire pit gathering area and covered outdoor kitchen in wood and stone with lantern lighting.",
+  "summary": "A Japanese-inspired outdoor lounge organized around a fire pit and a covered outdoor kitchen, lit by lantern-style pendants. The kind of amenity space guests remember.",
+  "cover": "takibi-outdoor-kitchen-rendering", "cover_alt": "Rendering of an outdoor kitchen and bar under a timber awning with lantern pendants at dusk", "badge": "Design rendering",
+  "body": [
+   {"h": "Overview", "p": ["Takibi Supesu turns leftover yard space into a retreat: a place to gather around fire, cook outdoors and linger after dark. The design finds beauty in the natural variation of wood and stone, pairing the two into a warm, quiet outdoor room.", "Lantern-style pendants with a koshi-moyo lattice pattern and cloth diffusion soften the light, with low-level accent lighting at paths, steps and planting edges so the fire stays the brightest element in the space."]},
+   {"h": "Scope", "ul": ["Lounge centered on a fire pit with built-in and loose seating", "Outdoor kitchen with an attached awning tied back to the building", "A wood and stone material palette that embraces grain and texture", "Lantern-style pendant lighting with layered low-level accent lights", "Design documentation and renderings for review"]}
+  ],
+  "credits": ["Landscape & outdoor living design: Atmos Design Build, LLC", "Project delivery: design-build"],
+  "gallery": [
+   {"img": "takibi-fire-pit-lounge-rendering", "alt": "Rendering of a fire pit lounge beside an outdoor bar under a timber pergola", "cap": "Design rendering: fire pit lounge"}
+  ]
+ },
+ {
+  "slug": "clairevue", "name": "Clairevue", "category": "residential", "type": "Historic home renovation",
+  "client": "Confidential", "year": "2026", "size": "3,100 sq ft",
+  "location": "San Diego, CA", "services": "Building design, interior design, material selection", "status": "In progress",
+  "title": "Clairevue: Historic Home Renovation Design | Atmos",
+  "description": "Renovation design for a 3,100-square-foot historic residence: reworked layout, relocated kitchen, restored porch and new exterior materials.",
+  "summary": "A historic residence reworked for modern living: a relocated kitchen and open plan inside, a restored covered porch and new siding outside, with the original character kept intact.",
+  "cover": "clairevue-exterior-rendering", "cover_alt": "Rendering of the renovated Clairevue residence with covered porch, lawn and pool", "badge": "Design rendering",
+  "body": [
+   {"h": "Overview", "p": ["The Clairevue residence was enlarged over the years by additions that never matched the charm of the original design. Keeping the core structure, Atmos reimagined the home in a modern colonial style, improving comfort and circulation inside and giving the exterior a more balanced, cohesive look."]},
+   {"h": "Scope", "ul": ["Comprehensive renovation plan for the existing residence and connected addition", "Interior layouts redesigned for better circulation, with the kitchen relocated to the rear and opened to the main living area", "Historic elements restored and reinterpreted: new windows and French doors, a covered front porch, brick and fiber-cement siding", "Outdoor living improvements, including a poolside environment"]}
+  ],
+  "gallery": [
+   {"img": "clairevue-before", "alt": "The existing Clairevue residence before renovation", "cap": "Before: the existing residence"},
+   {"img": "clairevue-front-rendering", "alt": "Rendering of the front elevation with new porch", "cap": "Design rendering: front elevation"},
+   {"img": "clairevue-kitchen-rendering", "alt": "Rendering of the relocated kitchen with island and pendant lights", "cap": "Design rendering: relocated kitchen"},
+   {"img": "kitchen-plan-material-board", "alt": "Kitchen plan and material board", "cap": "Kitchen plan and material board"},
+   {"img": "clairevue-living-room-rendering", "alt": "Rendering of the main living room with fireplace", "cap": "Design rendering: living room"},
+   {"img": "clairevue-aerial-rendering", "alt": "Aerial rendering of the residence and grounds", "cap": "Design rendering: aerial view"}
+  ]
+ }
+]

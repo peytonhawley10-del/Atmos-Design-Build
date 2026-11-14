@@ -1,0 +1,787 @@
+{
+ "alder-community-garden": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "alder-existing-home-fencing": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "alder-pergola-courtyard": {
+  "w": 1280,
+  "h": 817,
+  "widths": [
+   480,
+   960,
+   1280
+  ]
+ },
+ "alder-pergola-detail": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "alder-side-yard-turf": {
+  "w": 1600,
+  "h": 2399,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "alder-walkway-planting": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "backyard-schematic-design-board": {
+  "w": 1536,
+  "h": 1024,
+  "widths": [
+   480,
+   960,
+   1536
+  ]
+ },
+ "blooming-nook-aerial-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "blooming-nook-garden-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "blooming-nook-landscape-plan": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "blooming-nook-path-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "bower-courtyard-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "bower-parking-court-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "bower-site-plan": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "bower-stair-courtyard-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "clairevue-aerial-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "clairevue-before": {
+  "w": 800,
+  "h": 600,
+  "widths": [
+   480,
+   800
+  ]
+ },
+ "clairevue-exterior-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "clairevue-front-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "clairevue-kitchen-island-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "clairevue-kitchen-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "clairevue-living-room-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "crestview-before-construction": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "crestview-corner-planting": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "crestview-courtyard-rendering": {
+  "w": 1672,
+  "h": 941,
+  "widths": [
+   480,
+   960,
+   1600,
+   1672
+  ]
+ },
+ "crestview-entry-lawn": {
+  "w": 1402,
+  "h": 1122,
+  "widths": [
+   480,
+   960,
+   1402
+  ]
+ },
+ "crestview-front-landscape": {
+  "w": 1537,
+  "h": 1023,
+  "widths": [
+   480,
+   960,
+   1537
+  ]
+ },
+ "crestview-landscape-rendering": {
+  "w": 1672,
+  "h": 941,
+  "widths": [
+   480,
+   960,
+   1600,
+   1672
+  ]
+ },
+ "crestview-private-yard-turf": {
+  "w": 1600,
+  "h": 2400,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "crestview-street-fencing": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "designer-with-models": {
+  "w": 1856,
+  "h": 1674,
+  "widths": [
+   480,
+   960,
+   1600,
+   1856
+  ]
+ },
+ "kitchen-plan-material-board": {
+  "w": 1600,
+  "h": 1035,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "laguna-before-existing-pool": {
+  "w": 1600,
+  "h": 1131,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "laguna-new-pool-shell": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "laguna-pool-deck-construction": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "laguna-pool-deck-progress": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "laguna-pool-demolition": {
+  "w": 1600,
+  "h": 1200,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "laguna-pool-dusk-rendering": {
+  "w": 2400,
+  "h": 2027,
+  "widths": [
+   480,
+   960,
+   1600,
+   2400
+  ]
+ },
+ "laguna-pool-night-rendering": {
+  "w": 1672,
+  "h": 941,
+  "widths": [
+   480,
+   960,
+   1600,
+   1672
+  ]
+ },
+ "laguna-pool-rendering": {
+  "w": 1672,
+  "h": 941,
+  "widths": [
+   480,
+   960,
+   1600,
+   1672
+  ]
+ },
+ "laguna-site-construction": {
+  "w": 1600,
+  "h": 988,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "laguna-walkway-lighting-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "modern-living-room-interior": {
+  "w": 1600,
+  "h": 1280,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "multifamily-courtyard-pergola": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "pool-deck-lounge-rendering": {
+  "w": 1536,
+  "h": 1024,
+  "widths": [
+   480,
+   960,
+   1536
+  ]
+ },
+ "pool-terrace-sunset-rendering": {
+  "w": 1536,
+  "h": 1024,
+  "widths": [
+   480,
+   960,
+   1536
+  ]
+ },
+ "process-construction-site": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "process-consultation": {
+  "w": 1200,
+  "h": 800,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "process-design-drawings": {
+  "w": 1024,
+  "h": 1024,
+  "widths": [
+   480,
+   960,
+   1024
+  ]
+ },
+ "process-planning-models": {
+  "w": 1856,
+  "h": 1257,
+  "widths": [
+   480,
+   960,
+   1600,
+   1856
+  ]
+ },
+ "resort-terrace-pool-rendering": {
+  "w": 1536,
+  "h": 1024,
+  "widths": [
+   480,
+   960,
+   1536
+  ]
+ },
+ "sdre-logo": {
+  "w": 256,
+  "h": 256,
+  "widths": [
+   256
+  ]
+ },
+ "sea-breeze-bathroom-after": {
+  "w": 1600,
+  "h": 1623,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "sea-breeze-bathroom-after-door": {
+  "w": 600,
+  "h": 800,
+  "widths": [
+   480,
+   600
+  ]
+ },
+ "sea-breeze-bathroom-before": {
+  "w": 1600,
+  "h": 1275,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "sea-breeze-bathroom-material-board": {
+  "w": 1600,
+  "h": 1035,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "sea-breeze-shower-after": {
+  "w": 1600,
+  "h": 1054,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "sea-breeze-tile-in-progress": {
+  "w": 1600,
+  "h": 1200,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "sea-breeze-vanity-in-progress": {
+  "w": 1600,
+  "h": 2133,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "slate-bathroom-after": {
+  "w": 1086,
+  "h": 1448,
+  "widths": [
+   480,
+   960,
+   1086
+  ]
+ },
+ "slate-bathroom-after-wide": {
+  "w": 1600,
+  "h": 2133,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "slate-bathroom-before": {
+  "w": 1600,
+  "h": 2133,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "slate-bathroom-material-board": {
+  "w": 1600,
+  "h": 1035,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "slate-vanity-after": {
+  "w": 1600,
+  "h": 2133,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "takibi-fire-pit-lounge-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "takibi-outdoor-kitchen-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "terraza-before-site": {
+  "w": 2035,
+  "h": 1636,
+  "widths": [
+   480,
+   960,
+   1600,
+   2035
+  ]
+ },
+ "terraza-gated-entries": {
+  "w": 1600,
+  "h": 1206,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "terraza-private-lawn": {
+  "w": 1600,
+  "h": 2108,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "terraza-retaining-wall": {
+  "w": 1600,
+  "h": 2423,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "terraza-side-path-planting": {
+  "w": 1600,
+  "h": 2645,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "terraza-stair-path": {
+  "w": 1600,
+  "h": 2467,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "terraza-stair-planters": {
+  "w": 1600,
+  "h": 1221,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "terraza-terraced-yards": {
+  "w": 1600,
+  "h": 2000,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "warm-minimal-lounge-interior": {
+  "w": 1024,
+  "h": 1024,
+  "widths": [
+   480,
+   960,
+   1024
+  ]
+ },
+ "wireframe-building": {
+  "w": 928,
+  "h": 1232,
+  "widths": [
+   480,
+   928
+  ]
+ },
+ "woodline-before-construction": {
+  "w": 1600,
+  "h": 2133,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "woodline-entry-turf-yard": {
+  "w": 1280,
+  "h": 854,
+  "widths": [
+   480,
+   960,
+   1280
+  ]
+ },
+ "woodline-hillside-landscape": {
+  "w": 1280,
+  "h": 905,
+  "widths": [
+   480,
+   960,
+   1280
+  ]
+ },
+ "woodline-retaining-wall-fence": {
+  "w": 1280,
+  "h": 884,
+  "widths": [
+   480,
+   960,
+   1280
+  ]
+ },
+ "woodline-wood-entry-paneling": {
+  "w": 854,
+  "h": 1280,
+  "widths": [
+   480,
+   854
+  ]
+ },
+ "zig-zag-deck-after": {
+  "w": 1600,
+  "h": 1200,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "zig-zag-deck-before": {
+  "w": 1448,
+  "h": 1086,
+  "widths": [
+   480,
+   960,
+   1448
+  ]
+ },
+ "zig-zag-deck-rendering": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "zig-zag-deck-rendering-side": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "zig-zag-railing-after": {
+  "w": 1600,
+  "h": 1200,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "zig-zag-stairs-after": {
+  "w": 1076,
+  "h": 1434,
+  "widths": [
+   480,
+   960,
+   1076
+  ]
+ }
+}
