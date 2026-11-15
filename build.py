@@ -31,6 +31,7 @@ CONFIG = {
     "handyman_url": "",
 }
 
+PHONE_SIZES = "(max-width: 760px) 66vw, 100vw"
 IMAGES = json.loads((SRC / "images.json").read_text())
 PROJECTS = json.loads((SRC / "projects.json").read_text())
 ICONS = json.loads((SRC / "icons.json").read_text())
@@ -45,6 +46,9 @@ def esc(s):
 
 def img(name, alt="", sizes="100vw", cls="", eager=""):
     m = IMAGES[name]
+    if sizes.endswith("100vw"):
+        # ponytail: phones with 3x screens get 2x-quality images (about half the bytes). Remove if photos look soft.
+        sizes = sizes[:-5] + PHONE_SIZES
     srcset = ", ".join(f"/assets/img/{name}-{w}.webp {w}w" for w in m["widths"])
     src = m["widths"][min(1, len(m["widths"]) - 1)]
     load = 'fetchpriority="high"' if eager else 'loading="lazy" decoding="async"'

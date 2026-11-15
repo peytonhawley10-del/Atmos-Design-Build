@@ -40,8 +40,10 @@
   });
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
+    const open = drops.find((d) => d.contains(document.activeElement));
     drops.forEach((d) => setDrop(d, false));
-    setNav(false);
+    if (open) open.firstElementChild.focus();
+    if (nav.classList.contains('is-open')) { setNav(false); burger.focus(); }
   });
   const here = location.pathname.replace(/\/$/, '') || '/';
   $$('.nav a, .ftr__nav a').forEach((a) => {
@@ -55,6 +57,12 @@
       if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); }
     }), { rootMargin: '0px 0px -8% 0px' });
     revealables.forEach((el) => { el.classList.add('reveal'); io.observe(el); });
+  }
+
+  // Hide the sticky mobile bar while the bid form is on screen
+  const bid = document.getElementById('bid');
+  if (bid && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([en]) => document.body.classList.toggle('at-bid', en.isIntersecting), { rootMargin: '-30% 0px 0px 0px' }).observe(bid);
   }
 
   // Before/after slider
@@ -98,6 +106,7 @@
       const bad = firstInvalid(steps[0]);
       if (bad) { bad.reportValidity(); return; }
       show(1);
+      form.scrollIntoView({ block: 'start' });
       steps[1].querySelector('input').focus({ preventScroll: true });
       track('bid_form_step_2');
     };
