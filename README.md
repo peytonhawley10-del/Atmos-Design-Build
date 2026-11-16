@@ -28,7 +28,9 @@ Full steps for domain, forms, redirects and search-engine setup are in [docs/LAU
 | `src/projects.json` | Portfolio projects. Each entry becomes a project page and a card |
 | `build.py` | Assembles pages into `site/`, writes the sitemap, and checks for broken links |
 | `tools/optimize_images.py` | Converts a photo into responsive WebP files for the site |
-| `docs/LAUNCH.md` | Go-live checklist |
+| `tools/make_og.py` | Creates the link-preview image for each project page |
+| `docs/LAUNCH.md` | Go-live checklist, including what to confirm before launch |
+| `docs/REVIEW-PANEL.md` | How the site scored with six reviewers over three rounds |
 | `docs/RESEARCH.md` | Market, competitor and SEO research behind the redesign |
 
 Site-wide facts (phone, email, license number, the sister handyman brand) live in `CONFIG` at the top of `build.py`.

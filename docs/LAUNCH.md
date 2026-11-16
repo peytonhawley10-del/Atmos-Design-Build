@@ -4,25 +4,42 @@ Everything the live site needs is in the `site/` folder. It is plain HTML, CSS a
 
 ## 1. Confirm these before going live
 
-These statements are on the site. Each one is a promise or a fact only you can verify.
+These statements are on the site. Each one is a promise or a fact only you can verify. The review panel flagged the first three as the ones buyers will check first.
+
+**Likely to block a bid list if left open**
 
 | # | Where | What the site says | Check |
 |---|---|---|---|
-| 1 | Everywhere | The business is called "Atmos Design + Build" (footer: "Atmos Design Build, LLC") | Must match the name on your CSLB license record exactly |
-| 2 | Hero, FAQ, About | "Licensed & insured"; "carries liability insurance"; COI on request | Confirm your policy is active. The site deliberately never says "bonded" (CSLB prohibits it) |
-| 3 | FAQ | You can list a management company and owner entity on the certificate | Confirm with your insurance agent |
-| 4 | Form, hero, contact | "Reply within one business day" | Only keep it if you will hit it every time |
-| 5 | FAQ, Property Managers | You will register in a client's vendor compliance platform | Confirm you're willing (fees are roughly $100 a year per platform) |
-| 6 | Hero, About, Portfolio | 25+ years, 100+ projects, $45M+ project value | Carried over unchanged from the old site |
-| 7 | Home, Multifamily, Landscape | "Six apartment communities, 117 units" of site and landscape design | Added up from your portfolio: Laguna 16, Crestview 32, Woodline 12, Terraza 14, Alder 7, Bower 36 |
-| 8 | Hotel page | Guestroom, PIP and public-space renovation offered | There are no hotel projects in the portfolio yet. The page offers the service without claiming past hotel work. Remove the page if you don't want hotel leads yet |
-| 9 | Exterior page | Repairs from SB 721 balcony inspection reports | Confirm you want this work. The page says you do not perform the inspections |
-| 10 | Landscape FAQ | Landscape-only jobs are installed by a licensed landscape contractor | A B license covers multi-trade projects; landscape-only work needs a C-27. Confirm you have a C-27 partner |
-| 11 | STR and Design pages | Furniture and finish procurement | Carried over from the old site's FAQ |
-| 12 | Testimonial | Eileen Molloy quote | One grammar fix: "attention to details were" became "attention to detail was". Confirm with her, or tell me to restore the original wording |
-| 13 | Project pages | Client, building designer and general contractor credits | Copied from the old site. Confirm each firm is happy to be named |
-| 14 | Privacy Policy, Terms | Adapted from your existing pages, dated November 14, 2026 | Have an attorney review. Update the date to your launch date |
-| 15 | Handyman mentions | "Our sister handyman company" (no name or link) | When the brand launches, set `handyman_name` and `handyman_url` in `build.py` and rebuild. Every mention becomes a named link |
+| 1 | Hero, FAQ, About | "Licensed & insured"; "carries liability insurance"; COI on request | Confirm the policy is active. **The site says nothing about workers' compensation.** Property managers will ask. If you carry it, tell me and I'll add it; if you don't, expect it to block some bid lists |
+| 2 | Property Managers | "Send us your additional-insured and endorsement requirements and we'll confirm them with our broker" | Confirm your broker can issue additional-insured endorsements |
+| 3 | Everywhere | The business is "Atmos Design + Build" (footer: "Atmos Design Build, LLC") | Must match the name on your CSLB license record exactly |
+
+**Process commitments (only keep the ones you will do every time)**
+
+| # | Where | What the site promises |
+|---|---|---|
+| 4 | Form, hero, contact, thank-you | A reply within one business day, from a named project lead |
+| 5 | Property Managers | A five-step occupied-unit protocol: notice schedule agreed with the office and who is on site each day, photo log before work, protection and dust control, keys signed out and units locked, daily cleanup and status update |
+| 6 | Property Managers, STR | A day-by-day schedule with every bid, materials ordered before starting, a written heads-up if a date is at risk |
+| 7 | Several pages | Itemized written bids, per-unit pricing for repeatable scopes, change orders approved in writing, regular photo updates |
+| 8 | Hotel page | A model room first, a weekly count of rooms out of service, pricing per key and per room type |
+| 9 | FAQ, Property Managers | Registering in a client's vendor compliance platform (roughly $100 a year per platform) |
+
+**Facts and claims**
+
+| # | Where | What the site says | Check |
+|---|---|---|---|
+| 10 | Hero, About, Portfolio | 25+ years, 100+ projects, $45M+ "project value represented" | Carried over unchanged from the old site. Three reviewers found "represented" vague. If you can define it (for example "combined value of projects we designed or built"), I'll reword it |
+| 11 | Home, Multifamily, Landscape | Six apartment communities, 117 units of site and landscape design; three complete, three under construction | Added up from your portfolio: Laguna 16, Crestview 32, Woodline 12, Terraza 14, Alder 7, Bower 36. Woodline, Terraza and Alder are shown as complete |
+| 12 | Every project card | An "Atmos role" and "Status" row (for example "Site & landscape design", "Under construction") | Taken from the old site's project pages. Correct any that have changed |
+| 13 | Hotel page | "Hotels are a new focus for Atmos", with the model room as the first step | There are no hotel projects in the portfolio, and reviewers said an owner finds that gap in two clicks. Saying it plainly scored better with the hotel reviewer than implying experience. Remove the page if you don't want hotel leads yet |
+| 14 | Hotel, Landscape | Pool work is built with a licensed pool contractor; landscape and irrigation installation by licensed landscape contractors or within a multi-trade renovation; stamped drawings from a licensed design professional | A B license covers multi-trade projects. Confirm you have these partners |
+| 15 | Exterior page | Repairs from SB 721 balcony inspection reports (not the inspections) | Confirm you want this work |
+| 16 | STR, Design, Hotel | Ordering and installing furniture and finishes; coordinating FF&E with a purchasing agent | Carried over from the old site's FAQ, narrowed after review |
+| 17 | Testimonial | Eileen Molloy, "Client on three Atmos-designed communities" | SDRE Homebuyers is listed as the client on Woodline, Alder and Bower. One grammar fix was made: "attention to details were" became "attention to detail was". Confirm with her |
+| 18 | Project pages | Client, building designer and general contractor credits | Copied from the old site. Confirm each firm is happy to be named |
+| 19 | Privacy Policy, Terms | Adapted from your existing pages, dated November 14, 2026 | Have an attorney review. Update the date to your launch date |
+| 20 | Handyman mentions | "Our sister handyman company" (no name or link) | When the brand launches, set `handyman_name` and `handyman_url` in `build.py` and rebuild. Every mention becomes a named link |
 
 ## 2. Deploy on Netlify
 
@@ -63,7 +80,23 @@ The old site treats `https://atmosbuild.com` (no `www`, no trailing slash) as th
 
 These URLs are unchanged: `/`, `/about`, `/services`, `/portfolio`, `/contact-us`, `/privacy-policy`, `/terms`, and the project pages for Laguna, Crestview, Woodline, Terraza, Alder, Bower, Sea Breeze, Slate, Takibi Supesu and Clairevue.
 
-After launch, open each old URL once and confirm it lands on a real page.
+**Check before switching DNS.** On the preview address, run these and confirm the result:
+
+```bash
+curl -sI https://YOUR-PREVIEW-ADDRESS/portfolio | head -1
+```
+
+```bash
+curl -sI https://YOUR-PREVIEW-ADDRESS/portfolio/laguna | head -1
+```
+
+```bash
+curl -sI https://YOUR-PREVIEW-ADDRESS/services/building-design | head -3
+```
+
+The first two should return `200`. The third should return `301` with `location: /design-build`. After launch, open each old URL once and confirm it lands on a real page.
+
+**On Cloudflare Pages:** delete the first rule in `_redirects` (the `www` rule is Netlify syntax) and add a Redirect Rule for `www.atmosbuild.com` in the Cloudflare dashboard instead.
 
 ## 5. Search engine setup
 
@@ -124,15 +157,19 @@ That rebuilds the site and opens a preview at http://localhost:8000. Requires Py
 python3 tools/optimize_images.py path/to/photo.jpg my-photo-name
 ```
 
-Then reference `my-photo-name` in `src/projects.json` or a page and rebuild. The build stops with a clear message if a link or image is broken, or a title or description is too long.
+Then reference `my-photo-name` in `src/projects.json` or a page and rebuild. After adding or changing a project, also run `python3 tools/make_og.py` to create its link-preview image. The build stops with a clear message if a link or image is broken, or a title or description is too long.
 
 ## 8. What to add as you win work
 
-The site is honest about what Atmos has done so far. These additions will raise conversion the most:
+The site is honest about what Atmos has done so far. Every reviewer on the panel named the same gap: proof of completed renovation work for these buyers. These additions will raise conversion the most:
 
-1. **A completed unit-turn or interior upgrade case study** with units, schedule and cost per unit.
-2. **A hospitality project**, even a small one, with photos.
-3. **Two or three more testimonials** from property managers, with name, title and company.
-4. **Association memberships** (SCRHA, IREM San Diego) once you've joined, shown in the trust bar.
-5. **Your insurance limits** in dollars, and vendor platforms where you're approved.
-6. **Finished photography** of the multifamily communities now under construction, to replace renderings.
+1. **A completed unit-turn or interior upgrade case study** with units, days per turn and cost per unit.
+2. **A hospitality project**, even one model room, with photos. Until then, a named project lead with occupied-hotel experience is what a hotel owner will ask for.
+3. **Two or three references and testimonials** from property managers, with name, title and company.
+4. **A per-unit price sheet** for typical turn scopes (paint and flooring, light upgrade, full kitchen and bath).
+5. **Your insurance limits** in dollars, workers' compensation status, and vendor platforms where you're approved.
+6. **Association memberships** (SCRHA, IREM San Diego) once you've joined, shown in the trust bar.
+7. **Finished photography** of the communities now under construction, to replace renderings.
+8. **A finished short-term rental project**, with days offline.
+
+See [REVIEW-PANEL.md](REVIEW-PANEL.md) for how the site scored and what the reviewers asked for.

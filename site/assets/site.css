@@ -228,7 +228,8 @@ p{text-wrap:pretty}
 .scope>div{padding:clamp(20px,2.2vw,30px);background:var(--cream);border-radius:var(--r-lg)}
 .section:not(.section--sand) .scope>div{background:var(--card)}
 .scope .link{margin-top:20px}
-.note{margin-top:22px;max-width:86ch;font-size:15px;color:var(--muted)}
+.note{margin-top:24px;max-width:84ch;padding-left:14px;border-left:3px solid var(--blue);font-size:15px;line-height:1.55;color:#3d3a33}
+.note a,.trust a{text-decoration:underline;text-underline-offset:3px}
 .scope h3{font-size:20px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--line)}
 .checks{display:grid;gap:9px}
 .checks li{display:flex;gap:10px;align-items:flex-start}
@@ -363,7 +364,7 @@ figcaption b{display:block;color:var(--text);font-weight:600;font-size:16px}
 .phd .lead{max-width:34em;margin-top:22px;color:#ebe6dc}
 .phd .hero__cta{justify-content:flex-start}
 .phd__points{display:grid;grid-template-columns:repeat(3,minmax(0,300px));gap:10px;margin-top:clamp(36px,5vw,64px)}
-.phd__points li{padding:14px 16px;background:rgba(255,251,245,.1);border:1px solid rgba(255,251,245,.16);border-radius:var(--r-lg);backdrop-filter:blur(8px);font-size:15px;line-height:1.35}
+.phd__points li{padding:14px 16px;background:rgba(24,22,18,.5);border:1px solid rgba(255,251,245,.16);border-radius:var(--r-lg);backdrop-filter:blur(8px);font-size:15px;line-height:1.35}
 .phd__points b{display:block;font-size:17px;margin-bottom:3px}
 .phd__cap{left:auto;right:var(--gut);bottom:14px;z-index:1}
 .crumbs{margin-bottom:22px;font-size:14px;color:#cfcabf}
