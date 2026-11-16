@@ -1,4 +1,4 @@
-# 301s from the old Framer site's URLs, read by Cloudflare Pages (Netlify uses the same format).
+# 301s from the old Framer site's URLs, read by Cloudflare (Netlify uses the same format).
 # The www-to-apex redirect is set in the Cloudflare dashboard, not here. See docs/LAUNCH.md.
 /index.html                           /                               301
 /home                                 /                               301

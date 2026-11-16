@@ -14,7 +14,7 @@ Open http://localhost:8000.
 
 ## Deploy it
 
-Publish the `site/` folder. On Cloudflare Pages, connect this repository, leave the build command empty and set the output directory to `site`.
+Publish the `site/` folder. The repository is connected to Cloudflare, which deploys every push; `wrangler.jsonc` tells it to serve `site/`.
 
 Full steps for domain, forms, redirects and search-engine setup are in [docs/LAUNCH.md](docs/LAUNCH.md).
 

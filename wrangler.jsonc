@@ -1,0 +1,13 @@
+// Cloudflare Workers config. The Worker has no code of its own: it only serves the finished site in site/.
+// "name" must match the Worker's name in the Cloudflare dashboard.
+{
+  "name": "atmos-design-build",
+  "compatibility_date": "2025-10-01",
+  "assets": {
+    "directory": "./site",
+    // /about is served from about.html, and /about/ redirects to /about (matches the old site's URLs)
+    "html_handling": "drop-trailing-slash",
+    // unknown URLs get site/404.html with a real 404 status
+    "not_found_handling": "404-page"
+  }
+}

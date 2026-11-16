@@ -1,6 +1,6 @@
 # Launch guide: replacing atmosbuild.com
 
-Everything the live site needs is in the `site/` folder. It is plain HTML, CSS and JavaScript, so any static host can serve it. This guide assumes **Cloudflare Pages**.
+Everything the live site needs is in the `site/` folder. It is plain HTML, CSS and JavaScript, so any static host can serve it. This guide assumes **Cloudflare**.
 
 ## 1. Confirm these before going live
 
@@ -41,20 +41,19 @@ These statements are on the site. Each one is a promise or a fact only you can v
 | 19 | Privacy Policy, Terms | Adapted from your existing pages, dated November 14, 2026 | Have an attorney review. Update the date to your launch date |
 | 20 | Handyman mentions | "Our sister handyman company" (no name or link) | When the brand launches, set `handyman_name` and `handyman_url` in `build.py` and rebuild. Every mention becomes a named link |
 
-## 2. Deploy on Cloudflare Pages
+## 2. Deploy on Cloudflare
 
-1. In the Cloudflare dashboard open **Workers & Pages → Create → Pages → Connect to Git**.
-2. Authorize GitHub when asked and select the **Atmos-Design-Build** repository.
-3. Set the build options:
-   - **Production branch:** `claude/affectionate-euler-wf4gjj` (the repository has no `main` branch yet; switch this later if you create one)
-   - **Framework preset:** None
-   - **Build command:** leave empty
-   - **Build output directory:** `site`
-4. Click **Save and Deploy**. After about a minute you get a preview address ending in `.pages.dev`. Click through the site there.
+The repository is connected to Cloudflare as a Worker that serves the `site/` folder. `wrangler.jsonc` in the repository root tells Cloudflare what to serve, so the dashboard needs no build settings:
 
-From then on, every change pushed to that branch deploys automatically.
+- **Build command:** leave empty
+- **Deploy command:** `npx wrangler deploy` (the default)
+- **Branch:** `claude/affectionate-euler-wf4gjj` (the repository has no `main` branch yet; switch this later if you create one)
 
-**Turn on the bid form.** Cloudflare Pages has no built-in form handling, so the form sends through Web3Forms (free for 250 requests a month).
+Every change pushed to that branch deploys automatically. The Worker's overview page shows its preview address, ending in `.workers.dev`.
+
+If a deployment fails with a message about the Worker name, change `"name"` in `wrangler.jsonc` to the name shown in the dashboard.
+
+**Turn on the bid form.** Cloudflare has no built-in form handling, so the form sends through Web3Forms (free for 250 requests a month).
 
 1. Go to https://web3forms.com, enter the address that should receive bid requests (`info@atmosbuild.com`) and create an access key. It arrives by email.
 2. Put the key in `form_access_key` at the top of `build.py`, run `python3 build.py`, commit and push. Or send me the key and I'll do it. The key is public by design, so it is safe to share.
@@ -66,13 +65,13 @@ Until the key is set, the form shows a "please call or email us" message instead
 
 The old site treats `https://atmosbuild.com` (no `www`, no trailing slash) as the main address. Keep that, so Google's indexed URLs stay valid.
 
-1. In the Pages project open **Custom domains → Set up a custom domain** and add `atmosbuild.com`. Add `www.atmosbuild.com` as well.
+1. Open the Worker, go to **Settings → Domains & Routes → Add → Custom domain** and add `atmosbuild.com`. Add `www.atmosbuild.com` as well.
 2. If the domain's DNS is already on Cloudflare, the records are created for you. If it's elsewhere, either move the nameservers to Cloudflare or add the CNAME record the dashboard shows.
 3. Redirect `www` to the main address: in the domain's **Rules → Redirect Rules**, create a rule matching hostname `www.atmosbuild.com` that redirects to `https://atmosbuild.com` plus the original path, status 301.
 4. HTTPS is issued automatically.
 5. Cancel or unpublish the Framer site only after the new one is live on the domain.
 
-**Using Netlify instead?** It works the same way: connect the repository and set the publish directory to `site`. The `_redirects` and `_headers` files and the form work unchanged.
+**Using Netlify or Cloudflare Pages instead?** Connect the repository, leave the build command empty and set the output directory to `site`. The `_redirects` and `_headers` files and the form work unchanged.
 
 ## 4. Redirects from old URLs
 
