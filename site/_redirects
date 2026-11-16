@@ -1,4 +1,5 @@
 # 301s from the old Framer site's URLs. Works on Netlify and Cloudflare Pages.
+# The first rule (www to apex) is Netlify syntax. On Cloudflare Pages delete it and add a Redirect Rule instead.
 https://www.atmosbuild.com/*          https://atmosbuild.com/:splat   301!
 /index.html                           /                               301
 /home                                 /                               301

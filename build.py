@@ -79,8 +79,8 @@ def handyman():
 
 
 def project_facts(p):
-    facts = [("Atmos role", p["role"]), ("Units", p.get("units")), ("Size", p.get("size")),
-             ("Location", p["location"]), ("Year", p.get("year"))]
+    scale = ("Units", p["units"]) if p.get("units") else ("Size", p.get("size"))
+    facts = [("Atmos role", p["role"]), scale, ("Location", p["location"]), ("Year", p.get("year")), ("Status", p["status"])]
     return [(k, v) for k, v in facts if v]
 
 
@@ -180,8 +180,10 @@ def render(path, meta, body):
         graph.append({"@type": "Service", "@id": f"{url}#service", "name": meta["service"], "serviceType": meta["service"],
                       "provider": {"@id": f"{SITE}/#business"}, "url": url,
                       "areaServed": {"@type": "AdministrativeArea", "name": "San Diego County, CA"}})
+    og = f"assets/og/{path.strip('/').replace('/', '_')}.jpg"  # per-page preview image if one exists
     head = PARTIALS["head"].format(
-        title=esc(meta["title"]), description=esc(meta["description"]), url=url, og_image=f"{SITE}/assets/og.jpg",
+        title=esc(meta["title"]), description=esc(meta["description"]), url=url,
+        og_image=f"{SITE}/{og if (OUT / og).is_file() else 'assets/og.jpg'}",
         robots='<meta name="robots" content="noindex">' if meta.get("noindex") else "",
         preload=meta.get("preload", ""),
         ld=json.dumps({"@context": "https://schema.org", "@graph": graph}, separators=(",", ":")))

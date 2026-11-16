@@ -110,12 +110,16 @@
       steps[1].querySelector('input').focus({ preventScroll: true });
       track('bid_form_step_2');
     };
+    const type = form.elements['property-type'];
+    const fit = () => $$('[data-hide-for]', form).forEach((el) => { el.hidden = el.dataset.hideFor === type.value; });
+    type.addEventListener('change', fit);
     form.noValidate = true;
     form.elements.page.value = location.pathname;
     if (TYPE_BY_PAGE[here]) form.elements['property-type'].value = TYPE_BY_PAGE[here];
     if (params.get('scope') === 'handyman') form.querySelector('[value*="handyman"]').checked = true;
     if (params.has('packet')) form.elements['vendor-packet'].checked = true;
     if (params.has('walk')) form.elements.message.value = "I'd like to schedule a property walk.";
+    fit();
     show(0);
     form.querySelector('.form__next').addEventListener('click', next);
     form.querySelector('.form__back').addEventListener('click', () => show(0));

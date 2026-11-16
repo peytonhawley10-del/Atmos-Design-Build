@@ -50,13 +50,13 @@
         <div class="form__group" role="group" aria-labelledby="scope-label">
           <span id="scope-label">What needs work? <small>Select all that apply</small></span>
           <div class="form__checks">
-            <label><input type="checkbox" name="scope" value="Interiors / unit turns"><span>Interiors / unit turns</span></label>
+            <label><input type="checkbox" name="scope" value="Interiors, unit turns & refreshes"><span>Interiors, unit turns &amp; refreshes</span></label>
             <label><input type="checkbox" name="scope" value="Kitchens & baths"><span>Kitchens &amp; baths</span></label>
-            <label><input type="checkbox" name="scope" value="Hotel guestrooms / PIP"><span>Hotel guestrooms / PIP</span></label>
+            <label data-hide-for="Short-term rental"><input type="checkbox" name="scope" value="Hotel guestrooms / PIP"><span>Hotel guestrooms / PIP</span></label>
             <label><input type="checkbox" name="scope" value="Common areas & amenities"><span>Common areas &amp; amenities</span></label>
             <label><input type="checkbox" name="scope" value="Exterior, decks & balconies"><span>Exterior, decks &amp; balconies</span></label>
             <label><input type="checkbox" name="scope" value="Landscape & outdoor living"><span>Landscape &amp; outdoor living</span></label>
-            <label><input type="checkbox" name="scope" value="Design & material selection"><span>Design &amp; material selection</span></label>
+            <label><input type="checkbox" name="scope" value="Design, materials & furnishing"><span>Design, materials &amp; furnishing</span></label>
             <label><input type="checkbox" name="scope" value="Small repair / work order (handyman)"><span>Small repair / work order</span></label>
           </div>
         </div>
@@ -86,7 +86,7 @@
             <option>Partially</option>
             <option>No, vacant</option>
           </select></label>
-          <label>Vendor platform <small>(optional)</small> <select name="vendor-platform">
+          <label data-hide-for="Short-term rental">Vendor platform <small>(optional)</small> <select name="vendor-platform">
             <option value="">None / not sure</option>
             <option>Yardi VendorCafe / VendorShield</option>
             <option>RealPage Vendor Credentialing</option>
