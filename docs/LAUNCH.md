@@ -49,7 +49,7 @@ The repository is connected to Cloudflare as a Worker that serves the `site/` fo
 - **Deploy command:** `npx wrangler deploy` (the default)
 - **Branch:** `claude/affectionate-euler-wf4gjj` (the repository has no `main` branch yet; switch this later if you create one)
 
-Every change pushed to that branch deploys automatically. The Worker's overview page shows its preview address, ending in `.workers.dev`.
+Every change pushed to that branch deploys automatically. The Worker's overview page shows its preview address, ending in `.workers.dev`. That preview address sends a `noindex` header (set in `site/_headers`), so search engines index only your real domain.
 
 If a deployment fails with a message about the Worker name, change `"name"` in `wrangler.jsonc` to the name shown in the dashboard.
 
