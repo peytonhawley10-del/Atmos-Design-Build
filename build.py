@@ -79,7 +79,8 @@ def handyman():
 
 
 def project_facts(p):
-    facts = [("Units", p.get("units")), ("Size", p.get("size")), ("Location", p["location"]), ("Year", p.get("year"))]
+    facts = [("Atmos role", p["role"]), ("Units", p.get("units")), ("Size", p.get("size")),
+             ("Location", p["location"]), ("Year", p.get("year"))]
     return [(k, v) for k, v in facts if v]
 
 
@@ -141,10 +142,9 @@ def business_ld():
         "url": f"{SITE}/", "logo": f"{SITE}/assets/icon-512.png", "image": f"{SITE}/assets/og.jpg",
         "description": "San Diego design-build general contractor renovating multifamily, hotel and short-term rental "
                        "properties: interiors, exteriors and landscape, from design and material selection through turnkey build-out.",
-        "telephone": "+1-619-736-7590", "email": CONFIG["email"],
+        "telephone": CONFIG["tel"], "email": CONFIG["email"],
         "address": {"@type": "PostalAddress", "addressLocality": "San Diego", "addressRegion": "CA", "addressCountry": "US"},
-        "areaServed": [{"@type": "AdministrativeArea", "name": n} for n in
-                       ("San Diego County, CA", "Orange County, CA", "Riverside County, CA")],
+        "areaServed": {"@type": "AdministrativeArea", "name": "San Diego County, CA"},
         "hasCredential": {"@type": "EducationalOccupationalCredential",
                           "name": f"California Class B General Building Contractor License #{CONFIG['license']}",
                           "credentialCategory": "license", "identifier": CONFIG["license"], "url": CONFIG["cslb"],
@@ -248,6 +248,14 @@ def check(pages):
         for anchor in set(re.findall(r'href="#([\w-]+)"', out)):
             if f'id="{anchor}"' not in out:
                 errors.append(f"{path}: missing anchor #{anchor}")
+    for line in (OUT / "_redirects").read_text().splitlines():  # every redirect must leave a dead URL for a live one
+        parts = line.split()
+        if len(parts) >= 2 and parts[0].startswith("/"):
+            src, dst = parts[0], parts[1]
+            if src in valid:
+                errors.append(f"_redirects: {src} is a live page")
+            if dst.startswith("/") and dst not in valid:
+                errors.append(f"_redirects: target {dst} does not exist")
     titles = [m["title"] for m, _ in pages.values()]
     errors += [f"duplicate title: {t}" for t in set(titles) if titles.count(t) > 1]
     if errors:
@@ -269,10 +277,9 @@ def build():
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(out)
     listed = [p for p, (m, _) in pages.items() if not m.get("noindex") and p != "/404"]
-    today = date.today().isoformat()
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + "".join(f"  <url><loc>{SITE}{'/' if p == '/' else p}</loc><lastmod>{today}</lastmod></url>\n" for p in listed)
+        + "".join(f"  <url><loc>{SITE}{'/' if p == '/' else p}</loc></url>\n" for p in listed)
         + "</urlset>\n")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
     check(pages)

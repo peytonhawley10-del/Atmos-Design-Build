@@ -1,4 +1,7 @@
 # 301s from the old Framer site's URLs. Works on Netlify and Cloudflare Pages.
+https://www.atmosbuild.com/*          https://atmosbuild.com/:splat   301!
+/index.html                           /                               301
+/home                                 /                               301
 /services/building-design             /design-build                   301
 /services/interior-design-planning    /interior-renovation            301
 /services/consulting-services         /services                       301
@@ -6,6 +9,7 @@
 /services/3d-rendering-visualization  /design-build                   301
 /services/feasibility-studies         /services                       301
 /services/site-landscape-design       /landscape-hardscape            301
+# On the old site /portfolio/clairevue-copy was the Zig Zag deck project (a duplicated slug), not Clairevue.
 /portfolio/clairevue-copy             /portfolio/zig-zag              301
 /portfolio/blooming-nook              /portfolio                      301
 /design-lab                           /design-build                   301
