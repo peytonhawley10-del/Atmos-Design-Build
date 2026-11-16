@@ -14,7 +14,7 @@ Open http://localhost:8000.
 
 ## Deploy it
 
-Publish the `site/` folder. On Netlify, connect this repository and it deploys as-is (`netlify.toml` sets the folder, and the bid form uses Netlify Forms).
+Publish the `site/` folder. On Cloudflare Pages, connect this repository, leave the build command empty and set the output directory to `site`.
 
 Full steps for domain, forms, redirects and search-engine setup are in [docs/LAUNCH.md](docs/LAUNCH.md).
 
@@ -33,6 +33,6 @@ Full steps for domain, forms, redirects and search-engine setup are in [docs/LAU
 | `docs/REVIEW-PANEL.md` | How the site scored with six reviewers over three rounds |
 | `docs/RESEARCH.md` | Market, competitor and SEO research behind the redesign |
 
-Site-wide facts (phone, email, license number, the sister handyman brand) live in `CONFIG` at the top of `build.py`.
+Site-wide facts (phone, email, license number, the bid form access key, the sister handyman brand) live in `CONFIG` at the top of `build.py`.
 
 After any change, run `python3 build.py` and commit the result. The build fails with a clear message if a link or image is broken.

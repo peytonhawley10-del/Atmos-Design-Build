@@ -1,4 +1,0 @@
-# Netlify: connect this repo and it deploys the site/ folder as-is (no build step).
-# Headers live in site/_headers and redirects in site/_redirects.
-[build]
-  publish = "site"

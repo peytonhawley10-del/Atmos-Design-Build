@@ -78,7 +78,7 @@
     $$('.pcard').forEach((c) => { c.hidden = b.dataset.cat !== 'all' && c.dataset.cat !== b.dataset.cat; });
   }));
 
-  // Bid form: two steps, submitted to Netlify Forms without leaving the page
+  // Bid form: two steps, sent to the form service set in build.py without leaving the page
   const TYPE_BY_PAGE = {
     '/property-managers': 'Apartment community',
     '/multifamily-renovation': 'Apartment community',
@@ -131,12 +131,15 @@
       btn.disabled = true;
       error.hidden = true;
       try {
-        const res = await fetch('/', {
+        const data = {};
+        new FormData(form).forEach((v, k) => { data[k] = k in data ? data[k] + ', ' + v : v; });
+        const res = await fetch(form.action, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(new FormData(form)).toString(),
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(data),
         });
-        if (!res.ok) throw new Error(res.status);
+        const out = await res.json().catch(() => ({}));
+        if (!res.ok || out.success === false) throw new Error(res.status);
         track('generate_lead');
         location.href = '/thank-you';
       } catch (err) {

@@ -1,6 +1,6 @@
 # Launch guide: replacing atmosbuild.com
 
-Everything the live site needs is in the `site/` folder. It is plain HTML, CSS and JavaScript, so any static host can serve it. This guide assumes **Netlify**, because its built-in form handling means the bid form works with no extra service.
+Everything the live site needs is in the `site/` folder. It is plain HTML, CSS and JavaScript, so any static host can serve it. This guide assumes **Cloudflare Pages**.
 
 ## 1. Confirm these before going live
 
@@ -41,26 +41,38 @@ These statements are on the site. Each one is a promise or a fact only you can v
 | 19 | Privacy Policy, Terms | Adapted from your existing pages, dated November 14, 2026 | Have an attorney review. Update the date to your launch date |
 | 20 | Handyman mentions | "Our sister handyman company" (no name or link) | When the brand launches, set `handyman_name` and `handyman_url` in `build.py` and rebuild. Every mention becomes a named link |
 
-## 2. Deploy on Netlify
+## 2. Deploy on Cloudflare Pages
 
-1. Create a free Netlify account and choose **Add new site → Import an existing project**. Pick this GitHub repository.
-2. Leave the build command empty. The publish directory is `site` (already set in `netlify.toml`).
-3. Deploy. You get a preview address like `something.netlify.app`. Click through the site there.
-4. **Forms:** in Netlify, open **Forms** and enable form detection, then redeploy. A form named `bid` appears after the first deploy.
-   - Under **Forms → Form notifications**, add an email notification to `info@atmosbuild.com`.
-   - Submit one test bid on the preview address and confirm the email arrives.
-5. The free plan includes 100 form submissions a month. Spam is filtered by Netlify plus a hidden honeypot field.
+1. In the Cloudflare dashboard open **Workers & Pages → Create → Pages → Connect to Git**.
+2. Authorize GitHub when asked and select the **Atmos-Design-Build** repository.
+3. Set the build options:
+   - **Production branch:** `claude/affectionate-euler-wf4gjj` (the repository has no `main` branch yet; switch this later if you create one)
+   - **Framework preset:** None
+   - **Build command:** leave empty
+   - **Build output directory:** `site`
+4. Click **Save and Deploy**. After about a minute you get a preview address ending in `.pages.dev`. Click through the site there.
 
-**Using another host instead?** Cloudflare Pages reads the same `_redirects` file. The form will need a form service such as Formspree: in `src/partials/form.html` remove `data-netlify` and in `site/assets/site.js` change the `fetch('/')` address to the endpoint the service gives you.
+From then on, every change pushed to that branch deploys automatically.
+
+**Turn on the bid form.** Cloudflare Pages has no built-in form handling, so the form sends through Web3Forms (free for 250 requests a month).
+
+1. Go to https://web3forms.com, enter the address that should receive bid requests (`info@atmosbuild.com`) and create an access key. It arrives by email.
+2. Put the key in `form_access_key` at the top of `build.py`, run `python3 build.py`, commit and push. Or send me the key and I'll do it. The key is public by design, so it is safe to share.
+3. Submit one test bid on the preview address and confirm the email arrives.
+
+Until the key is set, the form shows a "please call or email us" message instead of sending, and the build prints a warning.
 
 ## 3. Point the domain
 
 The old site treats `https://atmosbuild.com` (no `www`, no trailing slash) as the main address. Keep that, so Google's indexed URLs stay valid.
 
-1. In Netlify: **Domain management → Add a domain** → `atmosbuild.com`. Set it as the primary domain. Add `www.atmosbuild.com` too; Netlify redirects it to the primary.
-2. At your domain registrar, replace the Framer DNS records with the ones Netlify shows you (an A/ALIAS record for the apex and a CNAME for `www`).
-3. Netlify issues the HTTPS certificate automatically, usually within minutes of DNS updating.
-4. Cancel or unpublish the Framer site only after the new one is live on the domain.
+1. In the Pages project open **Custom domains → Set up a custom domain** and add `atmosbuild.com`. Add `www.atmosbuild.com` as well.
+2. If the domain's DNS is already on Cloudflare, the records are created for you. If it's elsewhere, either move the nameservers to Cloudflare or add the CNAME record the dashboard shows.
+3. Redirect `www` to the main address: in the domain's **Rules → Redirect Rules**, create a rule matching hostname `www.atmosbuild.com` that redirects to `https://atmosbuild.com` plus the original path, status 301.
+4. HTTPS is issued automatically.
+5. Cancel or unpublish the Framer site only after the new one is live on the domain.
+
+**Using Netlify instead?** It works the same way: connect the repository and set the publish directory to `site`. The `_redirects` and `_headers` files and the form work unchanged.
 
 ## 4. Redirects from old URLs
 
@@ -96,7 +108,7 @@ curl -sI https://YOUR-PREVIEW-ADDRESS/services/building-design | head -3
 
 The first two should return `200`. The third should return `301` with `location: /design-build`. After launch, open each old URL once and confirm it lands on a real page.
 
-**On Cloudflare Pages:** delete the first rule in `_redirects` (the `www` rule is Netlify syntax) and add a Redirect Rule for `www.atmosbuild.com` in the Cloudflare dashboard instead.
+The `www` redirect is not in this file. It is set as a Redirect Rule in the Cloudflare dashboard (section 3).
 
 ## 5. Search engine setup
 

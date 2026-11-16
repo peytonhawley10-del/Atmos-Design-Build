@@ -1,4 +1,4 @@
-# Security and cache headers. Read by both Netlify and Cloudflare Pages.
+# Security and cache headers, read by Cloudflare Pages (Netlify uses the same format).
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN

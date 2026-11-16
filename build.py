@@ -25,6 +25,11 @@ CONFIG = {
     "license": "1154511",
     "cslb": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1154511",
     "year": str(date.today().year),
+    # Bid form delivery. Get a free access key at https://web3forms.com (enter the address that should receive
+    # bid requests; the key arrives by email). The key is public by design. Until it is set, the form shows
+    # its "call or email us" fallback instead of sending.
+    "form_endpoint": "https://api.web3forms.com/submit",
+    "form_access_key": "",
     # Sister handyman brand. Leave both empty until it launches; the copy then reads
     # "our sister handyman company" and small jobs route through the bid form.
     "handyman_name": "",
@@ -285,6 +290,8 @@ def build():
         + "</urlset>\n")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
     check(pages)
+    if not CONFIG["form_access_key"]:
+        print("WARNING: form_access_key is empty in build.py, so the bid form will not deliver requests yet")
     print(f"built {len(pages)} pages -> {OUT}")
 
 
@@ -298,11 +305,6 @@ def serve(port=8000):
         def translate_path(self, path):  # clean URLs: /about -> about.html, like Netlify
             p = super().translate_path(path)
             return p + ".html" if not Path(p).is_file() and Path(p + ".html").exists() else p
-
-        def do_POST(self):  # stand-in for Netlify Forms so the bid form can be tested locally
-            print("form post:", self.rfile.read(int(self.headers.get("Content-Length", 0))).decode())
-            self.send_response(200)
-            self.end_headers()
 
         def log_message(self, *a):
             pass
