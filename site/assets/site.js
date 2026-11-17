@@ -139,13 +139,10 @@
       btn.disabled = true;
       error.hidden = true;
       try {
-        const data = {};
-        new FormData(form).forEach((v, k) => { data[k] = k in data ? data[k] + ', ' + v : v; });
-        const res = await fetch(form.action, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify(data),
-        });
+        // Plain form data (no JSON content type) so the browser sends one request, with no CORS preflight.
+        const data = new FormData();
+        new FormData(form).forEach((v, k) => { data.set(k, data.has(k) ? data.get(k) + ', ' + v : v); });
+        const res = await fetch(form.action, { method: 'POST', headers: { Accept: 'application/json' }, body: data });
         const out = await res.json().catch(() => ({}));
         if (!res.ok || out.success === false) throw new Error(res.status);
         track('generate_lead');
