@@ -10,7 +10,7 @@ These statements are on the site. Each one is a promise or a fact only you can v
 
 | # | Where | What the site says | Check |
 |---|---|---|---|
-| 1 | Hero, FAQ, About | "Licensed & insured"; "carries liability insurance"; COI on request | Confirm the policy is active. **The site says nothing about workers' compensation.** Property managers will ask. If you carry it, tell me and I'll add it; if you don't, expect it to block some bid lists |
+| 1 | Hero, FAQ, About | "Licensed & insured"; "carries liability insurance"; COI on request | **Confirmed by you (licensed and insured).** Keep the policy active. **The site says nothing about workers' compensation.** Property managers will ask. If you carry it, tell me and I'll add it; if you don't, expect it to block some bid lists |
 | 2 | Property Managers | "Send us your additional-insured and endorsement requirements and we'll confirm them with our broker" | Confirm your broker can issue additional-insured endorsements |
 | 3 | Everywhere | The business is "Atmos Design + Build" (footer: "Atmos Design Build, LLC") | Must match the name on your CSLB license record exactly |
 
@@ -18,7 +18,7 @@ These statements are on the site. Each one is a promise or a fact only you can v
 
 | # | Where | What the site promises |
 |---|---|---|
-| 4 | Form, hero, contact, thank-you | A reply within one business day, from a named project lead |
+| 4 | Form, hero, contact, thank-you | A reply within one business day, from a named project lead **(confirmed by you)** |
 | 5 | Property Managers | A five-step occupied-unit protocol: notice schedule agreed with the office and who is on site each day, photo log before work, protection and dust control, keys signed out and units locked, daily cleanup and status update |
 | 6 | Property Managers, STR | A day-by-day schedule with every bid, materials ordered before starting, a written heads-up if a date is at risk |
 | 7 | Several pages | Itemized written bids, per-unit pricing for repeatable scopes, change orders approved in writing, regular photo updates |
@@ -30,7 +30,7 @@ These statements are on the site. Each one is a promise or a fact only you can v
 | # | Where | What the site says | Check |
 |---|---|---|---|
 | 10 | Hero, About, Portfolio | 25+ years, 100+ projects, $45M+ "project value represented" | Carried over unchanged from the old site. Three reviewers found "represented" vague. If you can define it (for example "combined value of projects we designed or built"), I'll reword it |
-| 11 | Home, Multifamily, Landscape | Six apartment communities, 117 units of site and landscape design; three complete, three under construction | Added up from your portfolio: Laguna 16, Crestview 32, Woodline 12, Terraza 14, Alder 7, Bower 36. Woodline, Terraza and Alder are shown as complete |
+| 11 | Home, Multifamily, Landscape, Portfolio, About | 47 apartment communities designed, 500+ units; 8 communities complete, 5 under construction | Provided by you in November 2026. The portfolio page shows six of these communities |
 | 12 | Every project card | An "Atmos role" and "Status" row (for example "Site & landscape design", "Under construction") | Taken from the old site's project pages. Correct any that have changed |
 | 13 | Hotel page | "Hotels are a new focus for Atmos", with the model room as the first step | There are no hotel projects in the portfolio, and reviewers said an owner finds that gap in two clicks. Saying it plainly scored better with the hotel reviewer than implying experience. Remove the page if you don't want hotel leads yet |
 | 14 | Hotel, Landscape | Pool work is built with a licensed pool contractor; landscape and irrigation installation by licensed landscape contractors or within a multi-trade renovation; stamped drawings from a licensed design professional | A B license covers multi-trade projects. Confirm you have these partners |

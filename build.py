@@ -29,7 +29,7 @@ CONFIG = {
     # bid requests; the key arrives by email). The key is public by design. Until it is set, the form shows
     # its "call or email us" fallback instead of sending.
     "form_endpoint": "https://api.web3forms.com/submit",
-    "form_access_key": "",
+    "form_access_key": "a2f435dc-363b-4db0-a9e0-44f24e37f802",
     # Sister handyman brand. Leave both empty until it launches; the copy then reads
     # "our sister handyman company" and small jobs route through the bid form.
     "handyman_name": "",
