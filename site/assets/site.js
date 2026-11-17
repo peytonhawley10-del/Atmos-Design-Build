@@ -65,6 +65,11 @@
     new IntersectionObserver(([en]) => document.body.classList.toggle('at-bid', en.isIntersecting), { rootMargin: '-30% 0px 0px 0px' }).observe(bid);
   }
 
+  // Images: no right-click save and no drag. A deterrent only: screenshots cannot be blocked.
+  const MEDIA = 'img, video, figure, .hero__img, .phd__bg, .why__bg, .aud__img, .pcard__img, .split__img, .step__img, .compare, .phero__img, .hdr__logo, .ftr__bg';
+  document.addEventListener('contextmenu', (e) => { if (e.target.closest(MEDIA)) e.preventDefault(); });
+  document.addEventListener('dragstart', (e) => { if (e.target.closest(MEDIA)) e.preventDefault(); });
+
   // Before/after slider
   $$('.compare input').forEach((input) => input.addEventListener('input', () => {
     input.parentElement.style.setProperty('--pos', input.value + '%');
@@ -75,7 +80,11 @@
     const b = e.target.closest('button');
     if (!b) return;
     $$('button', f).forEach((x) => x.setAttribute('aria-pressed', x === b));
-    $$('.pcard').forEach((c) => { c.hidden = b.dataset.cat !== 'all' && c.dataset.cat !== b.dataset.cat; });
+    $$('.pcard').forEach((c) => {
+      c.hidden = b.dataset.cat !== 'all' && c.dataset.cat !== b.dataset.cat;
+      c.classList.remove('is-shown', 'reveal');
+      if (!c.hidden) { void c.offsetWidth; c.classList.add('is-shown'); }
+    });
   }));
 
   // Bid form: two steps, sent to the form service set in build.py without leaving the page
@@ -118,7 +127,6 @@
     if (TYPE_BY_PAGE[here]) form.elements['property-type'].value = TYPE_BY_PAGE[here];
     if (params.get('scope') === 'handyman') form.querySelector('[value*="handyman"]').checked = true;
     if (params.has('packet')) form.elements['vendor-packet'].checked = true;
-    if (params.has('walk')) form.elements.message.value = "I'd like to schedule a property walk.";
     fit();
     show(0);
     form.querySelector('.form__next').addEventListener('click', next);

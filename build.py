@@ -67,7 +67,7 @@ def icon(name, cls=""):
             f'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{ICONS[name]}</svg>')
 
 
-def btn(href, label, variant="", ico="arrow-right"):
+def btn(href, label, variant="", ico="chevrons-right"):
     cls = f"btn btn--{variant}" if variant else "btn"
     href = MACROS["bid"]() if href == "bid" else href
     return f'<a class="{cls}" href="{href}"><span class="btn__icon">{icon(ico)}</span><span>{label}</span></a>'
@@ -89,6 +89,9 @@ def project_facts(p):
     return [(k, v) for k, v in facts if v]
 
 
+ON_PROJECTS = [False]  # rendering badges show only on the projects pages
+
+
 def pos(p):
     return f' style="--pos:{p["cover_pos"]}"' if p.get("cover_pos") else ""
 
@@ -108,7 +111,7 @@ def cards(slugs=""):
             f'<ul class="pcard__facts">{facts}</ul>'
             f'<span class="pcard__more">View project {icon("arrow-up-right")}</span></div>'
             f'<div class="pcard__img"{pos(p)}>{img(p["cover"], p["cover_alt"], "(min-width: 900px) 60vw, 100vw")}'
-            + (f'<span class="badge">{esc(p["badge"])}</span>' if p.get("badge") else "")
+            + (f'<span class="badge">{esc(p["badge"])}</span>' if p.get("badge") and ON_PROJECTS[0] else "")
             + "</div></a>")
     return f'<div class="pcards">{"".join(out)}</div>'
 
@@ -170,6 +173,7 @@ def render(path, meta, body):
     url = SITE + path
     has_form = "{{include:form}}" in body
     MACROS["bid"] = lambda: "#bid" if has_form else "/contact-us#bid"
+    ON_PROJECTS[0] = path.startswith("/portfolio")
     graph = [business_ld()]
     if path == "/":
         graph.append({"@type": "WebSite", "@id": f"{SITE}/#website", "url": f"{SITE}/", "name": "Atmos Design + Build",

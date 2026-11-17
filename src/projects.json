@@ -264,16 +264,6 @@
   ],
   "gallery": [
    {
-    "img": "terraza-before-site",
-    "alt": "Rear of the Terraza buildings before landscape work with bare soil",
-    "cap": "Before: bare site at the rear of the buildings"
-   },
-   {
-    "img": "terraza-terraced-yards",
-    "alt": "Terraced yards with block walls, steps and wood fencing",
-    "cap": "Terraced yards and steps"
-   },
-   {
     "img": "terraza-private-lawn",
     "alt": "Private yard with turf and wood fencing",
     "cap": "Private fenced lawn"
@@ -294,7 +284,16 @@
     "cap": "Planted side path"
    }
   ],
-  "role": "Site & landscape design"
+  "role": "Site & landscape design",
+  "before": {
+   "img": "terraza-before-site",
+   "alt": "Rear of the buildings before landscape work, with bare soil"
+  },
+  "after": {
+   "img": "terraza-terraced-yards",
+   "alt": "Terraced yards with block walls, steps and wood fencing"
+  },
+  "compare_h": "Bare slope to terraced yards"
  },
  {
   "slug": "alder",
@@ -585,11 +584,6 @@
   ],
   "gallery": [
    {
-    "img": "zig-zag-deck-before",
-    "alt": "The original deteriorated deck before replacement",
-    "cap": "Before: the deteriorated deck"
-   },
-   {
     "img": "zig-zag-deck-rendering",
     "alt": "Rendering of the new deck design with zig-zag railing",
     "cap": "Design rendering"
@@ -605,7 +599,16 @@
     "cap": "Railing detail"
    }
   ],
-  "role": "Deck design"
+  "role": "Deck design",
+  "before": {
+   "img": "zig-zag-deck-before",
+   "alt": "The original deteriorated deck before replacement"
+  },
+  "after": {
+   "img": "zig-zag-deck-after",
+   "alt": "The completed deck with zig-zag railing"
+  },
+  "compare_h": "Worn out to rebuilt"
  },
  {
   "slug": "takibi-supesu",
