@@ -21,7 +21,7 @@ SITE = "https://atmosbuild.com"
 CONFIG = {
     "phone": "(619) 736-7590",
     "tel": "+16197367590",
-    "email": "info@atmosbuild.com",
+    "email": "peyton@atmosbuild.com",
     "license": "1154511",
     "cslb": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1154511",
     "year": str(date.today().year),
