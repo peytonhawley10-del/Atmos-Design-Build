@@ -55,7 +55,7 @@ If a deployment fails with a message about the Worker name, change `"name"` in `
 
 **Turn on the bid form.** Cloudflare has no built-in form handling, so the form sends through Web3Forms (free for 250 requests a month).
 
-1. Go to https://web3forms.com, enter the address that should receive bid requests (`peyton@atmosbuild.com`) and create an access key. It arrives by email.
+1. Go to https://web3forms.com, enter the address that should receive bid requests (`info@atmosbuild.com`) and create an access key. It arrives by email.
 2. Put the key in `form_access_key` at the top of `build.py`, run `python3 build.py`, commit and push. Or send me the key and I'll do it. The key is public by design, so it is safe to share.
 3. Submit one test bid on the preview address and confirm the email arrives.
 
