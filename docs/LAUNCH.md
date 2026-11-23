@@ -63,26 +63,23 @@ Until the key is set, the form shows a "please call or email us" message instead
 
 ## 3. Point the domain
 
-### Where things stand (November 2026)
+**Done: live on atmosbuild.com since November 23, 2026.**
 
-- **atmosbuild.com was bought through GoHighLevel**, so it is registered and its DNS is hosted in GoHighLevel's Cloudflare account, which you can't access. The email security record also points at GoDaddy's mail service, where your Microsoft 365 email appears to be set up.
-- **It is being moved into your own Cloudflare account** using Cloudflare's account-to-account registration move. You've asked GoHighLevel support to start it. When Cloudflare asks you to approve the incoming domain, approve it within 5 days.
-- **Your account is already prepared**, so the move causes no downtime:
-  - All 17 DNS records are copied from the original, set to plain DNS (not proxied) exactly as before. Microsoft 365: MX, SPF, DMARC, autodiscover, enterpriseenrollment, enterpriseregistration, lyncdiscover, sip. GoHighLevel sending on `mail.atmosbuild.com`: MX, SPF, DMARC and the `email.mail` tracking record. The old Framer website records are kept so the old site stays up through the move.
-  - A Worker route `atmosbuild.com/*` → `atmos-design-build`.
-  - A redirect rule sending `www.atmosbuild.com` to `https://atmosbuild.com`, keeping the path.
-- **Still needed from GoHighLevel:** the full DNS export, to catch GoHighLevel's email signing (DKIM) record for `mail.atmosbuild.com`, which can't be seen from outside.
-
-### Switching the website over (after the move completes)
-
-Two DNS changes in your account turn on the route and the redirect:
-
-1. Replace the two Framer `A` records on `atmosbuild.com` with one **proxied** `AAAA` record pointing to `100::`. This is Cloudflare's standard placeholder for a site served entirely by a Worker.
-2. Change `www` from a CNAME to `sites.framer.app` to a **proxied** CNAME pointing to `atmosbuild.com`.
-
-Then check: every page loads on atmosbuild.com, `www` redirects, the old URLs redirect, the page does **not** send an `X-Robots-Tag: noindex` header (that is only for the preview address), and the email records are unchanged.
-
-After that, unpublish the Framer site and delete the Cloudflare API token used for setup.
+- **Registration:** atmosbuild.com was moved from GoHighLevel's Cloudflare account into yours (Cloudflare Registrar, paid through July 2029). Renewal billing is now in your Cloudflare account; add a payment method there before 2029.
+- **Website:** a proxied `AAAA` record on `atmosbuild.com` (`100::`, Cloudflare's placeholder for a site served entirely by a Worker) and the Worker route `atmosbuild.com/*` → `atmos-design-build`. "Always Use HTTPS" is on.
+- **www:** a proxied CNAME to `atmosbuild.com`, plus a redirect rule sending `www.atmosbuild.com` to `https://atmosbuild.com` with the path kept.
+- **Email, unchanged:**
+  - Microsoft 365: MX, SPF, DMARC, autodiscover, enterpriseenrollment, enterpriseregistration, lyncdiscover and sip.
+  - GoHighLevel sending on `mail.atmosbuild.com`: MX, SPF, DMARC and the `email.mail` tracking record.
+  - All of them are set to plain DNS (not proxied).
+- **Checked at launch:**
+  - All sitemap pages return 200 with no `noindex`.
+  - www redirects to the main address.
+  - All 15 old Framer URLs redirect.
+  - Unknown URLs get the 404 page.
+  - The HSTS header is present.
+- **Still open:** if GoHighLevel's email settings show a DKIM (`_domainkey`) record for `mail.atmosbuild.com`, add it in Cloudflare as plain DNS.
+- **Cleanup:** unpublish the Framer site, and delete the Cloudflare API token used for setup (My Profile → API Tokens).
 
 ## 4. Redirects from old URLs
 
